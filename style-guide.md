@@ -1,26 +1,68 @@
-# Front-end Style Guide
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+}
 
-## Layout
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 600px;
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    transform: translate(0, 30%);
+    border-radius: 20px;
+}
 
-The designs were created to the following widths:
+.qr-code-img picture img {
+    display: block;
+    margin: 15px;
+    width: 370px;
+    height: 370px;
+    border-radius: 20px;
+}
 
-- Mobile: 375px
-- Desktop: 1440px
+.header-card {
+    color: hsl(218, 44%, 22%);
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
 
-## Colors
+.discription {
+    color: hsl(220, 15%, 55%);
+    margin-top: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
 
-- White: hsl(0, 0%, 100%)
-- Light gray: hsl(212, 45%, 89%)
-- Grayish blue: hsl(220, 15%, 55%)
-- Dark blue: hsl(218, 44%, 22%)
+@media (max-width: 375px) {
+    .container-1 {
+        width: 350px;
+        height: 600px;
+    }
 
-## Typography
+    .qr-code-img picture img {
+        margin: 20px;
+        width: 315px;
+        height: 315px;
+        border-radius: 20px;
+    }
 
-### Body Copy
-
-- Font size (paragraph): 15px
-
-### Font
-
-- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 400, 700
+    .header-card {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .discription {
+        margin-top: 25px;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+}
